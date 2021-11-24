@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                font-family: 'Poppins', sans-serif;
+            }
+            pre {
+                font-size: 5em;
+            }
+            .tick line {
+                stroke: #C0C0BB;
+            }
+
+            .tick text {
+                fill: #635F5D;
+                cursor: default;
+            }
+
+            .tick-red line {
+                stroke: #fc0303;
+            }
+
+            .tick-red text {
+                fill: #fc0303;
+                cursor: default;
+            }
+
+            /* .mark {
+                fill: #137B80
+            } */
+
+            .mark {
+                transition: all 0.5s;
+            }
+
+            .axis-label, .dropdown-label {
+                font-size: 2.5em;
+                fill: #635F5D;
+                color: #635F5D;
+            }
+            
+            .dropdown-label {
+                margin-left: 100px;
+                margin-right: 10px;
+            }
+
+            /* Menus */
+            /* label, select {
+                font-size: 3em;
+            }
+
+            select option {
+                font-size: 1rem;
+            } */
+
+
+            /*React dropdown css pulled right from the module  */
+            .Dropdown-root {
+            font-size: 1.5em;
+            position: relative;
+            width: 300px;
+            display: inline-block;
+            }
+
+            .Dropdown-control {
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            box-sizing: border-box;
+            color: #333;
+            cursor: default;
+            outline: none;
+            padding: 8px 52px 8px 10px;
+            transition: all 200ms ease;
+            }
+
+            .Dropdown-control:hover {
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+            }
+
+            .Dropdown-arrow {
+            border-color: #999 transparent transparent;
+            border-style: solid;
+            border-width: 5px 5px 0;
+            content: ' ';
+            display: block;
+            height: 0;
+            margin-top: -ceil(2.5);
+            position: absolute;
+            right: 10px;
+            top: 14px;
+            width: 0
+            }
+
+            .is-open .Dropdown-arrow {
+            border-color: transparent transparent #999;
+            border-width: 0 5px 5px;
+            }
+
+            .Dropdown-menu {
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+            margin-top: -1px;
+            /* max-height: 200px; */
+            max-height: 400px;
+            overflow-y: auto;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            z-index: 1000;
+            -webkit-overflow-scrolling: touch;
+            }
+
+            .Dropdown-menu .Dropdown-group > .Dropdown-title{
+            padding: 8px 10px;
+            color: rgba(51, 51, 51, 1);
+            font-weight: bold;
+            text-transform: capitalize;
+            }
+
+            .Dropdown-option {
+            box-sizing: border-box;
+            color: rgba(51, 51, 51, 0.8);
+            cursor: pointer;
+            display: block;
+            padding: 8px 10px;
+            }
+
+            .Dropdown-option:last-child {
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            }
+
+            .Dropdown-option:hover {
+            background-color: #f2f9fc;
+            color: #333;
+            }
+
+            .Dropdown-option.is-selected {
+            background-color: #f2f9fc;
+            color: #333;
+            }
+
+            .Dropdown-noresults {
+            box-sizing: border-box;
+            color: #ccc;
+            cursor: default;
+            display: block;
+            padding: 8px 10px;
+            }
+
+
+           .menus-container {
+               margin-top: 20px;
+               margin-right: 60px;
+               display: flex;
+               justify-content: flex-start;
+               align-items: center;
+           }
+
+
+        </style>
+        <!--<script src="https://unpkg.com/d3@7.0.1/dist/d3.min.js"></script>-->
+        <title>Line Chart with Three Lines</title>
+    <script defer src="js/bundle.js"></script></head>
+    <body>
+        <div id="root"></div>
+        <!-- <script src="./js/index.js"></script> -->
+    </body>
+</html>
